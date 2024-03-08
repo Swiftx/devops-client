@@ -1,0 +1,44 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+#root {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main .slider {
+  border-right: 1px solid #3c3c3c;
+  background-color: #1c1c1c;
+  text-align: center;
+  color: #fff;
+}
+
+.main .header {
+  text-align: center;
+  color: #fff;
+  background-color: #1c1c1c;
+  border-bottom: 1px solid #3c3c3c;
+  -webkit-app-region: drag;
+  height: 35px;
+  line-height: 35px;
+}
+
+.main .content {
+  background-color: #1c1c1c;
+  text-align: center;
+  color: #fff;
+}

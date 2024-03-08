@@ -16,7 +16,13 @@ export class MainWindow extends BrowserWindow {
       height: 670,
       show: false,
       autoHideMenuBar: true,
-      ...(process.platform === 'linux' ? { icon } : {}),
+      titleBarStyle: 'hidden',
+      icon: process.platform === 'linux' ? icon : undefined,
+      titleBarOverlay: {
+        color: 'rgba(0,0,0,0)',
+        height: 35,
+        symbolColor: 'white'
+      },
       webPreferences: {
         preload,
         sandbox: false
