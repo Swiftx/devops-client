@@ -23,6 +23,10 @@ export class MainWindow extends BrowserWindow {
         height: 35,
         symbolColor: 'white'
       },
+      trafficLightPosition: {
+        x: 12,
+        y: 10
+      },
       webPreferences: {
         preload,
         sandbox: false
